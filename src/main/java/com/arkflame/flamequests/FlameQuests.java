@@ -1,12 +1,12 @@
-package dev._2lstudios.example;
+package com.arkflame.flamequests;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import dev._2lstudios.example.commands.ExampleCommand;
-import dev._2lstudios.example.listeners.PlayerJoinListener;
-import dev._2lstudios.example.tasks.ExampleTask;
+import com.arkflame.flamequests.commands.ExampleCommand;
+import com.arkflame.flamequests.listeners.PlayerJoinListener;
+import com.arkflame.flamequests.tasks.ExampleTask;
 
-public class ExamplePlugin extends JavaPlugin {
+public class FlameQuests extends JavaPlugin {
     
     @Override
     public void onEnable () {
@@ -14,7 +14,7 @@ public class ExamplePlugin extends JavaPlugin {
         this.saveDefaultConfig();
 
         // Set static instance
-        ExamplePlugin.instance = this;
+        FlameQuests.instance = this;
 
         // Register the example command
         this.getCommand("example").setExecutor(new ExampleCommand());
@@ -27,9 +27,9 @@ public class ExamplePlugin extends JavaPlugin {
         this.getServer().getScheduler().runTaskTimer(this, new ExampleTask(), taskRepeatEvery, taskRepeatEvery);
     }
 
-    private static ExamplePlugin instance;
+    private static FlameQuests instance;
 
-    public static ExamplePlugin getInstance () {
-        return ExamplePlugin.instance;
+    public static FlameQuests getInstance () {
+        return FlameQuests.instance;
     }
 }

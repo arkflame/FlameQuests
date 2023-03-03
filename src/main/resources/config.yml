@@ -1,6 +1,13 @@
+quests:
+ joined:
+  display-name: "Play The Server"
+ mine:
+  display-name: "Mining Stone and Ores"
+  objectives:
+    - "Block Break; 128; Pickaxe; Stones"
+  rewards:
+    - "Item; 8; Diamond"
+    - "Item; 4; Emerald; 0; Nameless; Loreless; Luck of the Sea: 1"
+    - "Item; 1; Diamond Pickaxe; 0; &c&lSuper Pico; &aWao!, &bGracias!; Efficiency: 1, Durability: 1"
 messages:
-  from-command: "&eHello world from Command."
-  from-listener: "&aHello world from Listener."
-  from-task: "&dHello world from Task."
-
-task-repeat-every: 3
+ completed_quest: "Completed {name}, received items:\n{items}"

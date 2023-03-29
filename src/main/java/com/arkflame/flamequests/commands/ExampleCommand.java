@@ -5,8 +5,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.arkflame.flamequests.managers.QuestManager;
 import com.arkflame.flamequests.menus.QuestsMenu;
+import com.arkflame.flamequests.quests.managers.QuestManager;
 
 public class ExampleCommand implements CommandExecutor {
     private QuestManager questManager;

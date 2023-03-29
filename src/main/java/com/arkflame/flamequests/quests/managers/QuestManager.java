@@ -1,4 +1,4 @@
-package com.arkflame.flamequests.managers;
+package com.arkflame.flamequests.quests.managers;
 
 import java.util.Collection;
 import java.util.HashMap;

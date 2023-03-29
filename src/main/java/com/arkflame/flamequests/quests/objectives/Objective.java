@@ -9,9 +9,4 @@ public abstract class Objective {
      * @param success Code to execute when loaded
      */
     public abstract void load(String[] rawObjective);
-
-    /**
-     * Register this objective on the Bukkit listeners it's required to work
-     */
-    public abstract void registerListeners();
 }

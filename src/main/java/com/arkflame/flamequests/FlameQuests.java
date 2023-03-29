@@ -6,8 +6,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
 
 import com.arkflame.flamequests.commands.ExampleCommand;
-import com.arkflame.flamequests.managers.ListenerManager;
-import com.arkflame.flamequests.managers.QuestManager;
+import com.arkflame.flamequests.listeners.managers.ListenerManager;
+import com.arkflame.flamequests.quests.managers.QuestManager;
 import com.arkflame.flamequests.tasks.ExampleTask;
 
 public class FlameQuests extends JavaPlugin {

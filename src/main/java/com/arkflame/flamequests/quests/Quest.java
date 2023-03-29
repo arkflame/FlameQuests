@@ -99,6 +99,8 @@ public class Quest {
                 if (objective != null) {
                     // Load the objective
                     objective.load(rawObjective);
+                    // Register objective listeners
+                    objective.registerListeners();
                     // Add to the list of objectives
                     objectives.add(objective);
                 }

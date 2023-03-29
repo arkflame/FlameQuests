@@ -6,8 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import com.arkflame.flamequests.managers.QuestManager;
-import com.arkflame.flamequests.quests.Quest;
-import com.arkflame.flamequests.quests.rewards.Reward;
+import com.arkflame.flamequests.menus.QuestsMenu;
 
 public class ExampleCommand implements CommandExecutor {
     private QuestManager questManager;
@@ -28,14 +27,7 @@ public class ExampleCommand implements CommandExecutor {
             return true;
         }
 
-        for (Quest quest : questManager.getQuests()) {
-            for (Reward reward : quest.getRewards()) {
-                reward.give((Player) sender);
-            }
-            break;
-        }
-
-        sender.sendMessage("Here are your items");
+        new QuestsMenu().build((Player) sender);
 
         return true;
     }

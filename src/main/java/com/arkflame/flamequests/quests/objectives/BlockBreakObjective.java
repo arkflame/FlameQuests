@@ -6,6 +6,7 @@ import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 
+import com.arkflame.flamequests.FlameQuests;
 import com.arkflame.flamequests.utils.MaterialUtil;
 
 public class BlockBreakObjective extends Objective {
@@ -15,6 +16,12 @@ public class BlockBreakObjective extends Objective {
     private Collection<Material> tools = null;
     // The blocks to break
     private Collection<Material> blocks = null;
+
+    @Override
+    public void registerListeners() {
+        // Register this objective to listeners
+        FlameQuests.getInstance().getListenerManager().getBlockBreakListener().registerObjective(this);
+    }
 
     @Override
     public void load(String[] rawObjective) {

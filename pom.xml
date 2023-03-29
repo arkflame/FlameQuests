@@ -34,6 +34,13 @@
             <version>1.18.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>dev._2lstudios</groupId>
+            <artifactId>InterfaceMaker</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/InterfaceMaker.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <!-- Build settings -->
